@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍩 Yummy Donuts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="clase-ya-funciona navbar navbar-expand-md bg-light no-gutters">
+            <div class="clase-ya-funciona">
+                <div class="logo-container">
+                    <a href="">
+                        <img src="img/logo-principal.png" class="logo" alt="">
+                    </a>
+                </div>
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="menu-container">
+                        <ul class="navbar-nav ml-auto menu">
+                            <li class="nav-item menu-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item menu-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Paquetes</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="clasic.html">Clásicos</a></li>
+                                    <li><a class="dropdown-item" href="clasic.html#rellenos">Rellenos</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item menu-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Tienda</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="index.html#our-menu">Comprar en línea</a></li>
+                                    <li><a class="dropdown-item" href="index.html#location">Localizar una tienda</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item menu-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Nosotros</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="history.html">Nuestra historia</a></li>
+                                    <li><a class="dropdown-item" href="history.html#our-vales">Nuestros valores</a></li>
+                                    <li><a class="dropdown-item" href="history.html#team">Equipo</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item menu-item">
+                                <a class="nav-link" href="contact.html" >Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>Contáctanos 😊</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre" class="text-size">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control text-size" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido" class="text-size">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" class="form-control text-size" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-size">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-control text-size" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje" class="text-size">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="form-control text-size" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-size">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+                
+    </main>
+    <footer class="footer">
+        <img class="footer-img" src="img/donutslogo2.png" alt="">
+        <h3 class="footer-title">Suscríbete para recibir las Promociones de la semana</h3>
+        <div class="footer-form">
+            <form class="form-container">
+                <div class="input-container">
+                    <input type="text" class="input-field" id="nombre" placeholder="Nombre y Apellido">
+                </div>
+                <div class="input-container">
+                    <input type="email" class="input-field" id="email" placeholder="Correo Electrónico">
+                </div>
+                <div class="input-container">
+                    <button type="submit" class="btn btn-primary submit-btn">Suscribirse</button>
+                </div>
+            </form>
+        </div>
+        <p class="footer-info">Yummy Donuts</p>
+        <p class="footer-info">Calle de los Donuts, No. 123, Barrio Dulce, Ciudad del Sabor CP 12345, País de Delicias</p>
+        <p class="footer-info">Teléfono: <a href="tel:+123456789" class="footer-info">+123456789</a></p>
+        <p class="footer-link"><a href="#">Aviso de Privacidad</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,645 @@
+:root {
+    /* Colores */
+    --primary: #FF6B9E;      /* Rosa Vibrante */
+    --secondary-1: #FFD700;  /* Amarillo Brillante */
+    --secondary-2: #A0E7E5;  /* Azul Claro */
+    --secondary-3: #A2E8B4;  /* Verde Menta */
+    --neutral: #FFFFFF;      /* Blanco */
+
+    /* Fuentes */
+    --font-title: 'Fredoka', serif;
+    --font-body: 'Montserrat Alternate', cursive;
+
+    /* Otras variables de estilo */
+    --font-color: #333333;   /* Color de texto principal */
+    --background-color: var(--neutral);
+    --button-background: var(--primary);
+    --button-text-color: var(--neutral);
+}
+
+html {
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body), sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title), serif;
+    color: var(--primary);
+}
+
+h2{
+    font-size: 43px;
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+    color: var(--primary);
+}
+p{
+    font-size: 18px;
+    font-family: var(--font-body);
+}
+a{
+    text-decoration: none;
+}
+
+/*****************************Inician los estilos de la barra de navegación ***********************/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.clase-ya-funciona{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-container{
+    margin-right: 30px;
+}
+
+.logo{
+    max-width: 80px;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu-item a{
+    color: rgb(151, 153, 155);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-item a:hover{
+    color: var(--primary);
+}
+.dropdown-menu .dropdown-item {
+    font-size: 16px; 
+}
+
+.navbar-nav .nav-item.dropdown .nav-link::after {
+    display: none;
+}
+
+/* Mostrar el dropdown-menu en estado de hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    /* background-color: rgba(255, 255, 255, 0.8); Valor de opacidad */
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* ********************************Fin header-inicio main**************************** */
+main {
+    margin-top: 100px; /* Ajusta esta altura según el tamaño de tu header */
+}
+
+/* Sección de noticias */
+.news-section{
+    width: 100%;
+    height: 30px;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+.news-title{
+    line-height: 30px; /*Iguala la altura del conntenedor para cdentrar verticalmente*/
+}
+
+.news-title a{
+    color: #fff;
+}
+
+/* Estilos para el carrusel */
+.carousel-section {
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    /*Ajustaeltamañodelosíconos*/width: 40px;
+    /*Ajustaelanchodelosíconos*/height: 40px;
+    /*Ajustalaalturadelosíconos*/background-color: rgba(0, 0, 0, 0.5);
+    /*Cambiaelfondoparamayorvisibilidad*/border-radius: 50%;
+    /*Conviertelosbotonesencírculos*/display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Sección de la comunidad */
+
+.comunity-section, .titles{
+    margin: 110px auto 30px auto;
+    text-align: center;
+}
+
+.comunity-section h3,
+.comunity-section p{
+    margin: 40px auto;
+}
+
+/* ****************************************FEATURE SECTION*************************************/
+
+.feature-section{
+    width: 100%;
+    display: flex;
+    margin: 20px 10px 60px auto; 
+    justify-content: center;
+    align-items: flex-start;
+}
+.container2{
+    margin-right: 10px;
+}   
+
+.donuts-image{
+    width: 250px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid var(--secondary-2);
+    padding: 7px;
+}
+
+.feature-title{
+    text-align: center;
+    margin: 40px 0 40px;
+}
+
+.feature-description {
+    text-align: center;
+    color: #285f74;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+/* **************************************menu donuts section************************************/
+.menu-donuts-section{
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+}
+.menu-donuts{
+    display: flex;
+}
+
+.card-donuts{
+    width: 300px;
+    margin: 30px 10px;
+}
+
+/*********************************** Aquí inicia el media section*/
+
+.media-section{
+    width: 70%;
+    margin: 0 auto;
+
+}
+.media-section-video,
+.media-section-map{
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    height: 300px;
+    margin: 10px auto;
+}
+.edia-container{
+    margin-bottom: 20px; 
+}
+/* ************************************ About-us *****************************************************/
+.val-section{
+    width: 90%;
+    margin: 30px auto 30px auto;
+}
+.equal-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.equal-height .card-img-top {
+    flex-shrink: 0;
+    height: 60%;
+    object-fit: cover;
+}
+.card-body{
+    margin: 0 auto 10px auto;
+    padding: 10px;
+}
+
+.card-title{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.card-text{
+    text-align: justify;
+    margin: 30px auto 10px auto;
+}
+
+/* .carusel-about-us{
+    border-bottom: solid 5px var(--secondary-blue);
+} */
+
+/* *******************************************Estilos de package**************************** */
+
+.package-section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.package{
+    width: 350px;
+    margin: 0 auto 30px auto;
+}
+
+/* .education-image{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #5edbe2;
+    padding: 5px;
+} */
+
+.package-title{
+    text-align: center;
+    margin: 15px 0 15px;
+}
+
+.package-description {
+    text-align: justify;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.btn-package{
+    width: 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+    background-color: var(--primary);
+    border: none;
+    padding: 5px;
+}
+/* Aquí inicia information section */
+.information-section{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.information-section-p{
+    margin: 45px auto;
+    text-align: justify;;
+}
+
+
+/******************************************* Contact Form******************************************* */
+.contact-section{
+    background-image:url(img/fondo-donuts.png) ;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+.contact-container {
+    width: 600px;
+    text-align: center;
+    padding: 20px;
+    margin: 5px auto;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.text-size{
+    font-size: 18px;
+}
+
+.contact-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ********************************************Inicia el Footer ***************************************/
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary);
+    padding: 20px;
+    text-align: center;
+    border-top: solid 5px var(--secondary-blue);
+}
+
+.footer-img{
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #5edbe2;  
+}
+
+.footer-title {
+    color: #333;
+    font-size: 24px;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container {
+    margin-right: 10px;
+}
+
+.input-field {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 200px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.input-field:hover{
+    background-color: var(--secondary-1);
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: var(--secondary-3);
+    border: solid 2px #fff;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.submit-btn:hover {
+    border: solid 2px var(--secondary-1);
+    background-color: var(--secondary-1);
+}
+
+.footer-info {
+    color: #333;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.footer-info a:hover{
+    color: var(--secondary-3);
+}
+
+.footer-link a {
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:1140px){
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .menu-item a{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .comunity-section p{
+        text-align: justify;
+    }
+    .equal-height .card-img-top {
+        flex-shrink: 0;
+        height: 40%;
+        object-fit: cover;
+    }
+    iframe{
+        max-width: 700px;
+        height: 300px;
+    }
+}
+@media(max-width:768px){
+    .equal-height .card-img-top {
+        flex-shrink: 0;
+        height: 70%;
+        object-fit: cover;
+    }
+    .menu-donuts{
+        display: block;
+    }
+    .card-donuts{
+        margin: 30px auto;
+    }
+    .contact-container {
+        max-width: 90%;
+    }
+    .text-size {
+        font-size: 16px;
+    }
+    .form-control{
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:720px){
+    h2{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 23px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .menu-item a{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .news-section{
+        height: auto;
+    }
+    .news-section h1{
+        margin-bottom: 0;
+    }
+    .equal-height .card-img-top {
+        flex-shrink: 0;
+        height: 70%;
+        object-fit: cover;
+    }
+    iframe{
+        width: 350px;
+        height: 200px;
+        margin: 10px auto;
+    }
+}
+@media(max-width:590px){
+    .equal-height .card-img-top {
+        flex-shrink: 0;
+        height: 65%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:540px){
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    a{
+        font-size: 15px;
+    }
+    .news-section{
+        height: auto;
+    }
+    .news-section h1{
+        margin-bottom: 0;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .input-container {
+        margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
+        margin-bottom: 10px; /* Agregar un margen inferior para separar los campos */
+    }
+
+    .input-field {
+        width: 100%; /* Ajustar el ancho al 100% para ocupar toda la columna */
+    }
+
+    .submit-btn {
+        width: 100%; /* Ajustar el ancho al 100% para ocupar toda la columna */
+        margin-top: 10px; /* Agregar un margen superior para separar el botón */
+    }
+    .equal-height .card-img-top {
+        flex-shrink: 0;
+        height: 45%;
+        object-fit: cover;
+    }
+    .menu-donuts{
+        display: block;
+    }
+    .card-donuts{
+        margin: 30px auto;
+    }
+    iframe{
+        width: 300px;
+        height: 170px;
+        margin: 5px auto    ;
+    }
+}
